@@ -4,7 +4,7 @@ SITEURL = ""
 
 PATH = "content"
 
-TIMEZONE = 'Europe/Rome'
+TIMEZONE = 'Europe/Zurich'
 
 DEFAULT_LANG = 'en'
 
@@ -20,13 +20,11 @@ LINKS = (
     ("Pelican", "https://getpelican.com/"),
     ("Python.org", "https://www.python.org/"),
     ("Jinja2", "https://palletsprojects.com/p/jinja/"),
-    ("You can modify those links in your config file", "#"),
 )
 
 # Social widget
 SOCIAL = (
-    ("You can add links in your config file", "#"),
-    ("Another social link", "#"),
+    ("GitHub", "https://github.com/max-pfeiffer"),
 )
 
 DEFAULT_PAGINATION = 10
