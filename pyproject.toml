@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "the-nerdy-tech-blog"
+version = "0.1.0"
+description = ""
+authors = ["Max Pfeiffer <max@maxpfeiffer.ch>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+pelican = {version = "4.10.2", extras = ["markdown"]}
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

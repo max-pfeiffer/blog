@@ -1,1 +1,1 @@
-# the-nerdy-tech-blog
+# The Nerdy Tech Blog
