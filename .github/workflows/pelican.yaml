@@ -13,3 +13,4 @@ jobs:
     with:
       settings: "publishconf.py"
       requirements: "pelican[markdown]"
+      theme: "https://github.com/jvanz/pelican-hyde"
