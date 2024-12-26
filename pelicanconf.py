@@ -1,6 +1,7 @@
 AUTHOR = 'Max Pfeiffer'
 SITENAME = 'The Nerdy Tech Blog'
 SITEURL = ""
+THEME = "hyde"
 
 PATH = "content"
 
@@ -15,16 +16,8 @@ TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
-# Blogroll
-LINKS = (
-    ("Pelican", "https://getpelican.com/"),
-    ("Python.org", "https://www.python.org/"),
-    ("Jinja2", "https://palletsprojects.com/p/jinja/"),
-)
-
-# Social widget
 SOCIAL = (
-    ("GitHub", "https://github.com/max-pfeiffer"),
+    ("github", "https://github.com/max-pfeiffer"),
 )
 
 DEFAULT_PAGINATION = 10

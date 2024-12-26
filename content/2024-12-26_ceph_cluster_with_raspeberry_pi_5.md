@@ -1,9 +1,9 @@
-Title: Ceph Cluster with Raspberry Pi 5 and NVme SSDs
-Summary: Bare metal provisioning of a Ceph cluster with three Raspberry Pis 5 and NVme SSDs
+Title: Ceph Cluster with Raspberry Pi 5 and NVMe SSDs
+Summary: Bare metal provisioning of a Ceph cluster with three Raspberry Pis 5 and NVMe SSDs
 Date: 2024-12-26 10:00
 Author: Max Pfeiffer
 Lang: en
-Keywords: Ceph, Raspberry Pi, NVme, SSD
+Keywords: Ceph, Raspberry Pi, NVMe, SSD
 
 As described in an earlier article, I run a Kubernetes cluster on my
 [Proxmox VE hypervisor](https://www.proxmox.com/en/proxmox-virtual-environment/overview) using Talos Linux. For this
@@ -25,7 +25,7 @@ when I tried it out.
 
 ## Hardware
 I choose to use Raspberry Pi 5 as platform because they have enough computing power and RAM for a small lab cluster
-with little usage/traffic. Since a while these add on HATs for NVme SSDs are available for it, so I thought that
+with little usage/traffic. Since a while these add on HATs for NVMe SSDs are available for it, so I thought that
 could be a speedy and affordable way to handle storage. I basically threw all of this then in a 10' desktop rack
 together with a POE switch.
 
@@ -163,7 +163,7 @@ SD cards was probably not the best idea. Especially the monitors will cause some
 probably need to change that at some point in the future. So I already eyeballed other PCIe to M.2 adapters which
 support more than one SSD like [this one](https://www.waveshare.com/pcie-to-2-ch-m.2-hat-plus-b.htm). That way I could
 have one SSD for the operating system and one for storage.
-I admit that the managed 150W POE switch is quite an overkill for that project. But I choose that one because I also
+I admit that the managed 150W POE switch is quite overkill for that project. But I choose that one because I also
 want to use it for other lab projects in the future. There are much cheaper options out there. For instance, Waveshare
 is offering this [cheap 120W POE switch](https://www.waveshare.com/gigabit-poe-switch-120w.htm) which would fully
 suffice for that project.
