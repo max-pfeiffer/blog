@@ -24,7 +24,7 @@ I like that infrastructure-as-code approach, so I started a proof of concept pro
 so I spun up some virtual machines on that server using the [Talos Linux](https://www.talos.dev/) iso image and used the
 [Talos Terraform provider](https://github.com/siderolabs/terraform-provider-talos) to provision the Kubernetes cluster.
 
-I was absolutely amazed how easy that was. I probably just spent roughly 3 hours to put together this little POC
+I was absolutely amazed how easy that was. I just spent roughly three hours to put together this little POC
 project: [https://github.com/max-pfeiffer/proxmox-talos-opentofu](https://github.com/max-pfeiffer/proxmox-talos-opentofu)
 
 I encourage anyone to give Talos Linux a shot and try it out. 
