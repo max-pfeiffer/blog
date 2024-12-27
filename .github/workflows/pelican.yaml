@@ -12,5 +12,5 @@ jobs:
       id-token: "write"
     with:
       settings: "publishconf.py"
-      requirements: "pelican[markdown]"
+      requirements: "pelican[markdown] pelican-seo"
       theme: "https://github.com/jvanz/pelican-hyde"

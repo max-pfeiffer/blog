@@ -1,4 +1,5 @@
 Title: Provisioning a Kubernetes Cluster with Talos Linux and Proxmox VE with OpenTofu
+Description: Proof of concept project for provisioning a Kubernetes cluster with Talos Linux and Proxmox VE with OpenTofu
 Summary: Proof of concept project for provisioning a Kubernetes cluster with Talos Linux and Proxmox VE with OpenTofu
 Date: 2024-12-25 15:00
 Author: Max Pfeiffer

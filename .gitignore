@@ -170,5 +170,12 @@ cython_debug/
 # PyPI configuration file
 .pypirc
 
+# Pycharm
 .idea
+
+# Generated content
 output
+
+# SEO plugin
+seo_report.html
+

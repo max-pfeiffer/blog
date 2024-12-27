@@ -1,5 +1,6 @@
 Title: Ceph Cluster with Raspberry Pi 5 and NVMe SSDs
-Summary: Bare metal provisioning of a Ceph cluster with three Raspberry Pis 5 and NVMe SSDs
+Description: Bare metal provisioning of a Ceph cluster with three Raspberry Pi 5 and NVMe SSDs 
+Summary: Bare metal provisioning of a Ceph cluster with three Raspberry Pi 5 and NVMe SSDs
 Date: 2024-12-26 10:00
 Author: Max Pfeiffer
 Lang: en

@@ -1,6 +1,6 @@
 AUTHOR = 'Max Pfeiffer'
 SITENAME = 'The Nerdy Tech Blog'
-SITEURL = ""
+SITEURL = "https://max-pfeiffer.github.io/blog"
 THEME = "hyde"
 
 PATH = "content"
@@ -25,3 +25,10 @@ DEFAULT_PAGINATION = 10
 # Hyde theme
 PROFILE_IMAGE = "avatar.jpeg"
 FOOTER_TEXT = "© 2020 Max Pfeiffer"
+
+# SEO Plugin
+SEO_REPORT = False
+SEO_ENHANCER = True
+SEO_ENHANCER_OPEN_GRAPH = True
+SEO_ENHANCER_TWITTER_CARDS = True
+LOGO = "https://max-pfeiffer.github.io/blog/images/avatar.jpeg"

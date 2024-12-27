@@ -22,6 +22,27 @@ test = ["anyio[trio]", "coverage[toml] (>=7)", "exceptiongroup (>=1.2.0)", "hypo
 trio = ["trio (>=0.26.1)"]
 
 [[package]]
+name = "beautifulsoup4"
+version = "4.12.3"
+description = "Screen-scraping library"
+optional = false
+python-versions = ">=3.6.0"
+files = [
+    {file = "beautifulsoup4-4.12.3-py3-none-any.whl", hash = "sha256:b80878c9f40111313e55da8ba20bdba06d8fa3969fc68304167741bbf9e082ed"},
+    {file = "beautifulsoup4-4.12.3.tar.gz", hash = "sha256:74e3d1928edc070d21748185c46e3fb33490f22f52a3addee9aee0f4f7781051"},
+]
+
+[package.dependencies]
+soupsieve = ">1.2"
+
+[package.extras]
+cchardet = ["cchardet"]
+chardet = ["chardet"]
+charset-normalizer = ["charset-normalizer"]
+html5lib = ["html5lib"]
+lxml = ["lxml"]
+
+[[package]]
 name = "blinker"
 version = "1.9.0"
 description = "Fast, simple object-to-object and broadcast signaling"
@@ -251,6 +272,24 @@ watchfiles = ">=0.21.0"
 markdown = ["markdown (>=3.1)"]
 
 [[package]]
+name = "pelican-seo"
+version = "1.2.2"
+description = "Pelican plugin to improve SEO (Search Engine Optimization) to reach top positions on search engines."
+optional = false
+python-versions = ">=3.6.2,<4.0"
+files = [
+    {file = "pelican-seo-1.2.2.tar.gz", hash = "sha256:dd86aedf1bb2cbdb32bdcade3e95be95bf18ca85947ad610099c864119100498"},
+    {file = "pelican_seo-1.2.2-py3-none-any.whl", hash = "sha256:98c0c6f30510e4f5b52343abf8c1da2bee8b52b206a3682891a6e830dc2e3215"},
+]
+
+[package.dependencies]
+beautifulsoup4 = ">=4.9,<5.0"
+pelican = ">=4.5"
+
+[package.extras]
+markdown = ["markdown (>=3.2)"]
+
+[[package]]
 name = "pygments"
 version = "2.18.0"
 description = "Pygments is a syntax highlighting package written in Python."
@@ -327,6 +366,17 @@ python-versions = ">=3.7"
 files = [
     {file = "sniffio-1.3.1-py3-none-any.whl", hash = "sha256:2f6da418d1f1e0fddd844478f41680e794e6051915791a034ff65e5f100525a2"},
     {file = "sniffio-1.3.1.tar.gz", hash = "sha256:f4324edc670a0f49750a81b895f35c3adb843cca46f0530f79fc1babb23789dc"},
+]
+
+[[package]]
+name = "soupsieve"
+version = "2.6"
+description = "A modern CSS selector implementation for Beautiful Soup."
+optional = false
+python-versions = ">=3.8"
+files = [
+    {file = "soupsieve-2.6-py3-none-any.whl", hash = "sha256:e72c4ff06e4fb6e4b5a9f0f55fe6e81514581fca1515028625d0f299c602ccc9"},
+    {file = "soupsieve-2.6.tar.gz", hash = "sha256:e2e68417777af359ec65daac1057404a3c8a5455bb8abc36f1a9866ab1a51abb"},
 ]
 
 [[package]]
@@ -448,4 +498,4 @@ anyio = ">=3.0.0"
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.12"
-content-hash = "aaf361db01e08f7e51adc3dabed21030ea06fed68b2a4650b4ac72ca68771b4f"
+content-hash = "7157549da744d61a279ff7e94f04beefbba9e5865ecb12a88cc1e94fc7037c49"
