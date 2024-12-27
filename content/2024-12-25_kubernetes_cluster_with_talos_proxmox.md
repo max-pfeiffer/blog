@@ -15,14 +15,15 @@ on GitHub.
 
 [Talos Linux](https://www.talos.dev/) is a special Linux distribution geared towards its only purpose which is
 providing a platform for Kubernetes. It comes with an API which can be utilized for provision and configure the OS
-installation and the Kubernetes cluster. That makes it an ideal partner for provisioning Tools like OpenTofu or
-Terraform. Consequently, there is no direct shell access to the Talos machines. 
+installation and the Kubernetes cluster. That makes it an ideal partner for provisioning Tools like
+[OpenTofu](https://opentofu.org/) or Terraform. Consequently, there is no direct shell access to the Talos machines. 
 
 I like that infrastructure-as-code approach, so I started a proof of concept project with
 [OpenTofu](https://opentofu.org/) the next weekend. I already have Proxmox VE as hypervisor running in my home lab,
-so I span up some virtual machines on that server using the [Talos Linux](https://www.talos.dev/) iso image and used the
+so I spun up some virtual machines on that server using the [Talos Linux](https://www.talos.dev/) iso image and used the
 [Talos Terraform provider](https://github.com/siderolabs/terraform-provider-talos) to provision the Kubernetes cluster.
 
 I was absolutely amazed how easy that was. I probably just spent roughly 3 hours to put together this little POC
 project: [https://github.com/max-pfeiffer/proxmox-talos-opentofu](https://github.com/max-pfeiffer/proxmox-talos-opentofu)
+
 I encourage anyone to give Talos Linux a shot and try it out. 
