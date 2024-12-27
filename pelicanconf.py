@@ -32,3 +32,18 @@ SEO_ENHANCER = True
 SEO_ENHANCER_OPEN_GRAPH = True
 SEO_ENHANCER_TWITTER_CARDS = True
 LOGO = "https://max-pfeiffer.github.io/blog/images/avatar.jpeg"
+
+# Sitemap plugin
+SITEMAP = {
+    "format": "xml",
+    "priorities": {
+        "articles": 0.5,
+        "indexes": 0.5,
+        "pages": 0.5
+    },
+    "changefreqs": {
+        "articles": "monthly",
+        "indexes": "daily",
+        "pages": "monthly"
+    }
+}
