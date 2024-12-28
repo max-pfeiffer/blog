@@ -1,6 +1,6 @@
 AUTHOR = 'Max Pfeiffer'
 SITENAME = 'The Nerdy Tech Blog'
-SITEURL = "https://max-pfeiffer.github.io/blog"
+SITEURL = "http://127.0.0.1:8000"
 THEME = "hyde"
 
 PATH = "content"
@@ -21,9 +21,6 @@ SOCIAL = (
 )
 
 DEFAULT_PAGINATION = 10
-
-# Google Search Console
-DEFAULT_METADATA = {"google-site-verification": "F3nYemi_dYYQckoOJ33wBp5BG4frj27_I6Iiianw594"}
 
 # Hyde theme
 PROFILE_IMAGE = "avatar.jpeg"
