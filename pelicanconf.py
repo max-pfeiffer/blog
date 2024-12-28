@@ -22,6 +22,9 @@ SOCIAL = (
 
 DEFAULT_PAGINATION = 10
 
+# Google Search Console
+DEFAULT_METADATA = {"google-site-verification": "F3nYemi_dYYQckoOJ33wBp5BG4frj27_I6Iiianw594"}
+
 # Hyde theme
 PROFILE_IMAGE = "avatar.jpeg"
 FOOTER_TEXT = "© 2020 Max Pfeiffer"
