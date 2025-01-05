@@ -272,6 +272,21 @@ watchfiles = ">=0.21.0"
 markdown = ["markdown (>=3.1)"]
 
 [[package]]
+name = "pelican-injector"
+version = "1.0.0"
+description = "Pelican plugin to inject custom code before or after specific HTML tags"
+optional = false
+python-versions = ">=3.8.1"
+files = [
+    {file = "pelican_injector-1.0.0-py3-none-any.whl", hash = "sha256:fc41860ce7d80f1743df1263910241848d662bfc7c267adce3cc7fa8d346dace"},
+    {file = "pelican_injector-1.0.0.tar.gz", hash = "sha256:9aeefd346af03b0637ae2c38252786f8a8ec309bb0d7dd3727428d1ddda35f50"},
+]
+
+[package.dependencies]
+beautifulsoup4 = ">=4.12.2"
+pelican = ">=4.8.0"
+
+[[package]]
 name = "pelican-seo"
 version = "1.2.2"
 description = "Pelican plugin to improve SEO (Search Engine Optimization) to reach top positions on search engines."
@@ -516,4 +531,4 @@ anyio = ">=3.0.0"
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.12"
-content-hash = "fd9dd2d9bf8cabfbe8497cd0da0cbf8a5d2ef5d9b0e4289856c71b9f6154e73a"
+content-hash = "077e2a08729ec067bf4332bc81afa366a32e8c7e0cc32c35d99bce09ecef1c40"

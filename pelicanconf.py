@@ -24,14 +24,14 @@ DEFAULT_PAGINATION = 10
 
 # Hyde theme
 PROFILE_IMAGE = "avatar.jpeg"
-FOOTER_TEXT = "© 2020 Max Pfeiffer"
+FOOTER_TEXT = "© 2025 Max Pfeiffer"
 
 # SEO Plugin
 SEO_REPORT = False
 SEO_ENHANCER = True
 SEO_ENHANCER_OPEN_GRAPH = True
 SEO_ENHANCER_TWITTER_CARDS = True
-LOGO = "avatar.jpeg"
+LOGO = "https://max-pfeiffer.github.io/blog/images/avatar.jpeg"
 
 # Sitemap plugin
 SITEMAP = {
@@ -47,3 +47,10 @@ SITEMAP = {
         "pages": "monthly"
     }
 }
+
+# Injector Plugin
+INJECTOR_ITEMS = [
+    ('head', '<meta name="google-site-verification" content="F3nYemi_dYYQckoOJ33wBp5BG4frj27_I6Iiianw594" />'),
+]
+INJECTOR_IN_PAGES = False
+INJECTOR_IN_ARTICLES = True
