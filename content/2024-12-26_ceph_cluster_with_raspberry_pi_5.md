@@ -111,8 +111,8 @@ Cephadm needs a user which a certain set of permissions. By default the root use
 [you can also configure a different user with narrowed down permissions](https://docs.ceph.com/en/octopus/cephadm/operations/#configuring-a-different-ssh-user).
 I am just going with the default here.
 
-In order to add the other two nodes, you need to configure the sshd in '/etc/ssh/sshd_config' and permit root login:
-'PermitRootLogin yes' or better `PermitRootLogin prohibit-password`. After that, you can copy over the SSH keys from the
+In order to add the other two nodes, you need to configure the sshd in `/etc/ssh/sshd_config` and permit root login:
+`PermitRootLogin yes` or better `PermitRootLogin prohibit-password`. After that, you can copy over the SSH keys from the
 admin node like that:
 
     ::shell
@@ -144,7 +144,7 @@ So you better check if this is actually the case:
     ::shell
     sudo cephadm shell ceph orch device ls --wide --refresh
 
-If there is a problem, you will see that listed in the 'REJECT REASONS' column. You might need to follow up on that by
+If there is a problem, you will see that listed in the `REJECT REASONS` column. You might need to follow up on that by
 using fdisk to remove partitions or using `ceph-volume lvm zap` to clean up devices.
 I had no problems adding my three NVMe SSDs on the three Raspberry Pis.
 
@@ -159,7 +159,7 @@ node: [https://ceph1:8443/](https://ceph1:8443/)
 
 ![Ceph Cluster in 10'' rack]({static}/images/2024-12-26_ceph_dashboard.png)
 
-## Critics
+## Self Critics
 Working on the project, I noticed already some things I need to improve. Having the operating system running on the
 SD cards was probably not the best idea. Especially the monitors will cause some serious wear and tear there. So I
 probably need to change that at some point in the future. So I already eyeballed other PCIe to M.2 adapters which
