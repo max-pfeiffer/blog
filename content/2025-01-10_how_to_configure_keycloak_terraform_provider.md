@@ -4,7 +4,8 @@ Summary: Since v26.0.0 Keycloak provides new configuration options for bootstrap
 Date: 2025-01-10 11:00
 Author: Max Pfeiffer
 Lang: en
-Keywords: Keycloak, OpenTofu, Terraform, Terraform Provider, Bootstrapping
+Keywords: Keycloak, OpenTofu, Terraform, Terraform Provider, bootstrapping
+Image: https://max-pfeiffer.github.io/blog/images/2025-01-10_keycloak_config_option.jpeg
 
 The [Keycloak](https://www.keycloak.org/) software engineers decided
 [to introduce an admin service account for bootstrapping Keycloak](https://github.com/keycloak/keycloak/issues/9829#issuecomment-2109799158).
@@ -12,12 +13,12 @@ This configuration option is available since Keycloak v26.0.0 but is currently n
 [admin bootstrap documentation](https://www.keycloak.org/server/bootstrap-admin-recovery). But it is listed on the
 [summary page for configuration options](https://www.keycloak.org/server/all-config#category-bootstrap_admin).
 
-I tested using the new environment variables `KC_BOOTSTRAP_ADMIN_CLIENT_ID` and `KC_BOOTSTRAP_ADMIN_CLIENT_SECRET`
-for my automated Keycloak provisioning process with [OpenTofu](https://opentofu.org/). It works like a charm.
+I tested my automated Keycloak provisioning process using the new environment variables `KC_BOOTSTRAP_ADMIN_CLIENT_ID`
+and `KC_BOOTSTRAP_ADMIN_CLIENT_SECRET` with [OpenTofu](https://opentofu.org/). It works like a charm.
 
 ![2025-01-10_keycloak_config_option.jpeg](images/2025-01-10_keycloak_config_option.jpeg)
 
-Thanks a lot to the Keycloak team for providing such an option. It makes life so much easier when you user the
+Thanks a lot to the Keycloak team for providing such an option. It makes life so much easier when you use the
 [Keycloak Terraform provider](https://github.com/keycloak/terraform-provider-keycloak). Especially when you
 manage the Keycloak installation with [OpenTofu](https://opentofu.org/) or Terraform as well. This way you are able
 to install and configure [Keycloak](https://www.keycloak.org/) in one go.
