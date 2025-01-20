@@ -21,7 +21,7 @@ based on your own root certificate authority (CA). They also provide
 [CertificateRequest](https://cert-manager.io/docs/usage/certificaterequest) controller that uses
 [Step CA](https://github.com/smallstep/certificates).
 
-![Smallstep GitHub Organisation]({static}/2025-01-20_bootstrap_certificate_authority.jpeg)
+![Smallstep GitHub Organisation]({static}/images/2025-01-20_bootstrap_certificate_authority.jpeg)
 
 Installing [Step CA](https://github.com/smallstep/certificates) and [Step Issuer](https://github.com/smallstep/step-issuer)
 und configuring Ingresses with it, I fell into a couple of traps. So that process was not as straight forward as I
