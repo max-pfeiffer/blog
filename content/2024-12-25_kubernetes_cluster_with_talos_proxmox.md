@@ -27,4 +27,4 @@ so I spun up some virtual machines on that server using the [Talos Linux](https:
 I was absolutely amazed how easy that was. I just spent roughly three hours to put together this little POC
 project: [https://github.com/max-pfeiffer/proxmox-talos-opentofu](https://github.com/max-pfeiffer/proxmox-talos-opentofu)
 
-I encourage anyone to give Talos Linux a shot and try it out. 
+I encourage everyone to give Talos Linux a shot and try it out. 
