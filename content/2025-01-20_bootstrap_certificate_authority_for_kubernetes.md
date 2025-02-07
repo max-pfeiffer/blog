@@ -191,7 +191,7 @@ put your new root certificate into a file i.e. `root-ca.pem` that you can use an
 
 ### Local Machines
 [Step CLI tool](https://github.com/smallstep/cli) offers a [very convenient way to install the root certificate into
-your local trust store](https://smallstep.com/docs/step-cli/reference/certificate/install/index.html):
+your local default trust store](https://smallstep.com/docs/step-cli/reference/certificate/install/index.html):
 ```shell
 step certificate install root-ca.pem
 ```
