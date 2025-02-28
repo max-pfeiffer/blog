@@ -1,10 +1,10 @@
 Title: Securing the Prometheus and Alertmanager web UI with oauth2-proxy and Keycloak
 Description: How to configure a secure login for your Prometheus and Alertmanger web UI with oauth2-proxy and Keycloak
 Summary: How to configure a secure login for your Prometheus and Alertmanger web UI with oauth2-proxy and Keycloak
-Date: 2025-02-28 15:00
+Date: 2025-02-28 12:00
 Author: Max Pfeiffer
 Lang: en
-Keywords: Prometheus, Alertmanager, oauth2-proxy, Keycloak, SSO, Single Sign On
+Keywords: Prometheus, Alertmanager, oauth2-proxy, Keycloak, SSO, Single Sign On, Kubernetes
 Image: https://max-pfeiffer.github.io/blog/images/2025-02-28_oauth2_proxy_simplified-architecture.svg
 
 [Prometheus](https://prometheus.io/) and [Alertmanager](https://github.com/prometheus/alertmanager) come with a quite
@@ -22,7 +22,7 @@ proxy or as middleware. In a Kubernetes environment with an ingress controller, 
 middleware and let it just handle the authentication challenges. How that works is well described in
 [its official documentation](https://oauth2-proxy.github.io/oauth2-proxy/behaviour).
 
-## Preliminary decisions
+## Preliminary rulings
 For doing the configuration, we need to do some decisions first:
 
 1. ingress configuration for Prometheus and Altermanager: on what domains or URL paths would we like to run these applications
