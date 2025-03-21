@@ -242,6 +242,44 @@ files = [
 ]
 
 [[package]]
+name = "minchin-pelican-plugins-autoloader"
+version = "1.2.1"
+description = "Pelican plugin, used to auto-load my other plugins."
+optional = false
+python-versions = "*"
+groups = ["main"]
+files = [
+    {file = "minchin.pelican.plugins.autoloader-1.2.1-py3-none-any.whl", hash = "sha256:d73cec6b28ab6d83356415f99b2d899e0737d7f8955f8c2938f363e442ee035a"},
+    {file = "minchin.pelican.plugins.autoloader-1.2.1.tar.gz", hash = "sha256:74a7e9bdac33461900b8bdb81c33423409e35c9c7cece193491abf7356d9cd95"},
+]
+
+[package.dependencies]
+pelican = "*"
+semantic-version = "*"
+
+[package.extras]
+all = ["black", "isort", "markdown", "minchin.pelican.plugins.nojekyll", "minchin.releaser (>=0.8.2)", "pip-tools"]
+build = ["minchin.releaser (>=0.8.2)", "pip-tools"]
+dev = ["markdown", "minchin.pelican.plugins.nojekyll"]
+lint = ["black", "isort"]
+
+[[package]]
+name = "minchin-pelican-plugins-nojekyll"
+version = "1.2.0"
+description = "Pelican plugin that adds a `.nojekyll` file to the output root. Useful for publishing to Github Pages. Written in Python."
+optional = false
+python-versions = "*"
+groups = ["main"]
+files = [
+    {file = "minchin.pelican.plugins.nojekyll-1.2.0-py3-none-any.whl", hash = "sha256:4d396adebcf93fd6f540149ad9f712a11d901e151581d7d4b0006e51d165d886"},
+    {file = "minchin.pelican.plugins.nojekyll-1.2.0.tar.gz", hash = "sha256:b37acf1f68e5fd5deffddc326fb14c9955d05c2e67054b49dd6f53e7137897fb"},
+]
+
+[package.dependencies]
+"minchin.pelican.plugins.autoloader" = "!=1.2.0"
+pelican = "*"
+
+[[package]]
 name = "ordered-set"
 version = "4.1.0"
 description = "An OrderedSet is a custom MutableSet that remembers its order, so that every"
@@ -399,6 +437,22 @@ pygments = ">=2.13.0,<3.0.0"
 
 [package.extras]
 jupyter = ["ipywidgets (>=7.5.1,<9)"]
+
+[[package]]
+name = "semantic-version"
+version = "2.10.0"
+description = "A library implementing the 'SemVer' scheme."
+optional = false
+python-versions = ">=2.7"
+groups = ["main"]
+files = [
+    {file = "semantic_version-2.10.0-py2.py3-none-any.whl", hash = "sha256:de78a3b8e0feda74cabc54aab2da702113e33ac9d9eb9d2389bcf1f58b7d9177"},
+    {file = "semantic_version-2.10.0.tar.gz", hash = "sha256:bdabb6d336998cbb378d4b9db3a4b56a1e3235701dc05ea2690d9a997ed5041c"},
+]
+
+[package.extras]
+dev = ["Django (>=1.11)", "check-manifest", "colorama (<=0.4.1) ; python_version == \"3.4\"", "coverage", "flake8", "nose2", "readme-renderer (<25.0) ; python_version == \"3.4\"", "tox", "wheel", "zest.releaser[recommended]"]
+doc = ["Sphinx", "sphinx-rtd-theme"]
 
 [[package]]
 name = "six"
@@ -560,4 +614,4 @@ anyio = ">=3.0.0"
 [metadata]
 lock-version = "2.1"
 python-versions = "^3.12"
-content-hash = "9771f1dc2035e5dd51de2df0b584ca3d270731729e009ebda5610b54695c6ca8"
+content-hash = "c2b7851dd80f439d6a3e8241afff9bf5f36757a5c886b166bde2e6398c37a848"
