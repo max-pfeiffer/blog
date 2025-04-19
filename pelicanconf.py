@@ -31,6 +31,7 @@ SEO_REPORT = False
 SEO_ENHANCER = True
 SEO_ENHANCER_OPEN_GRAPH = True
 SEO_ENHANCER_TWITTER_CARDS = True
+SEO_ENHANCER_SITEMAP_URL = "https://max-pfeiffer.github.io/blog/sitemap.xml"
 LOGO = "https://max-pfeiffer.github.io/blog/images/avatar.jpeg"
 
 # Sitemap plugin
