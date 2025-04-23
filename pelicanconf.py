@@ -46,8 +46,8 @@ LOGO = "https://max-pfeiffer.github.io/blog/images/avatar.jpeg"
 SITEMAP = {
     "format": "xml",
     "priorities": {
-        "articles": 0.5,
-        "indexes": 0.5,
+        "articles": 0.9,
+        "indexes": 1.0,
         "pages": 0.5
     },
     "changefreqs": {
