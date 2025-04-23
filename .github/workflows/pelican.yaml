@@ -13,4 +13,4 @@ jobs:
     with:
       settings: "publishconf.py"
       requirements: "pelican[markdown] git+https://github.com/max-pfeiffer/seo@feature/add-sitemap-to-robots-txt pelican-sitemap pelican-injector minchin-pelican-plugins-nojekyll"
-      theme: "https://github.com/jvanz/pelican-hyde"
+      theme: "https://github.com/max-pfeiffer/pelican-hyde"

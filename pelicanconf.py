@@ -1,7 +1,7 @@
 AUTHOR = 'Max Pfeiffer'
 SITENAME = 'The Nerdy Tech Blog'
 SITEURL = "http://127.0.0.1:8000"
-THEME = "hyde"
+THEME = "pelican-hyde"
 
 PATH = "content"
 
@@ -37,8 +37,8 @@ FOOTER_TEXT = "© 2025 Max Pfeiffer"
 # SEO Plugin
 SEO_REPORT = False
 SEO_ENHANCER = True
-SEO_ENHANCER_OPEN_GRAPH = True
-SEO_ENHANCER_TWITTER_CARDS = True
+SEO_ENHANCER_OPEN_GRAPH = False
+SEO_ENHANCER_TWITTER_CARDS = False
 SEO_ENHANCER_SITEMAP_URL = "https://max-pfeiffer.github.io/blog/sitemap.xml"
 LOGO = "https://max-pfeiffer.github.io/blog/images/avatar.jpeg"
 
