@@ -8,7 +8,7 @@ readme = "README.md"
 [tool.poetry.dependencies]
 python = "^3.12"
 pelican = {version = "4.11.0", extras = ["markdown"]}
-pelican-seo = { git = "https://github.com/max-pfeiffer/seo", branch = "feature/add-sitemap-to-robots-txt" }
+pelican-seo = "1.4.0"
 pelican-sitemap = "1.2.0"
 pelican-injector = "1.0.0"
 minchin-pelican-plugins-nojekyll = "1.2.0"

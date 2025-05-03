@@ -341,13 +341,15 @@ pelican = ">=4.8.0"
 
 [[package]]
 name = "pelican-seo"
-version = "1.3.0"
+version = "1.4.0"
 description = "Pelican plugin to improve search engine optimization (SEO)"
 optional = false
 python-versions = "~=3.9"
 groups = ["main"]
-files = []
-develop = false
+files = [
+    {file = "pelican_seo-1.4.0-py3-none-any.whl", hash = "sha256:c0c69e83f5e4eacbe9d2128d0884f79432bd537e0928066f5e08d312d358d319"},
+    {file = "pelican_seo-1.4.0.tar.gz", hash = "sha256:a4d8b12fd9a333e6a32d93afd17ff80b90f3ef32e65e49425aab01e8bc7fce74"},
+]
 
 [package.dependencies]
 beautifulsoup4 = ">=4.9"
@@ -355,12 +357,6 @@ pelican = ">=4.5"
 
 [package.extras]
 markdown = ["markdown (>=3.4)"]
-
-[package.source]
-type = "git"
-url = "https://github.com/max-pfeiffer/seo"
-reference = "feature/add-sitemap-to-robots-txt"
-resolved_reference = "63a2397ee88367ab935c6d76dc94016ece048681"
 
 [[package]]
 name = "pelican-sitemap"
@@ -484,14 +480,14 @@ files = [
 
 [[package]]
 name = "soupsieve"
-version = "2.6"
+version = "2.7"
 description = "A modern CSS selector implementation for Beautiful Soup."
 optional = false
 python-versions = ">=3.8"
 groups = ["main"]
 files = [
-    {file = "soupsieve-2.6-py3-none-any.whl", hash = "sha256:e72c4ff06e4fb6e4b5a9f0f55fe6e81514581fca1515028625d0f299c602ccc9"},
-    {file = "soupsieve-2.6.tar.gz", hash = "sha256:e2e68417777af359ec65daac1057404a3c8a5455bb8abc36f1a9866ab1a51abb"},
+    {file = "soupsieve-2.7-py3-none-any.whl", hash = "sha256:6e60cc5c1ffaf1cebcc12e8188320b72071e922c2e897f737cadce79ad5d30c4"},
+    {file = "soupsieve-2.7.tar.gz", hash = "sha256:ad282f9b6926286d2ead4750552c8a6142bc4c783fd66b0293547c8fe6ae126a"},
 ]
 
 [[package]]
@@ -521,14 +517,14 @@ files = [
 
 [[package]]
 name = "unidecode"
-version = "1.3.8"
+version = "1.4.0"
 description = "ASCII transliterations of Unicode text"
 optional = false
-python-versions = ">=3.5"
+python-versions = ">=3.7"
 groups = ["main"]
 files = [
-    {file = "Unidecode-1.3.8-py3-none-any.whl", hash = "sha256:d130a61ce6696f8148a3bd8fe779c99adeb4b870584eeb9526584e9aa091fd39"},
-    {file = "Unidecode-1.3.8.tar.gz", hash = "sha256:cfdb349d46ed3873ece4586b96aa75258726e2fa8ec21d6f00a591d98806c2f4"},
+    {file = "Unidecode-1.4.0-py3-none-any.whl", hash = "sha256:c3c7606c27503ad8d501270406e345ddb480a7b5f38827eafe4fa82a137f0021"},
+    {file = "Unidecode-1.4.0.tar.gz", hash = "sha256:ce35985008338b676573023acc382d62c264f307c8f7963733405add37ea2b23"},
 ]
 
 [[package]]
@@ -618,4 +614,4 @@ anyio = ">=3.0.0"
 [metadata]
 lock-version = "2.1"
 python-versions = "^3.12"
-content-hash = "7b98e9ecb59560d9ffc5acc7a6b2ead6af82912ccc66c4f2e84dc73c50ba36f2"
+content-hash = "87da459981a76e572f962993410268f21765bdf40e38525a0c7a127aa9b47342"
