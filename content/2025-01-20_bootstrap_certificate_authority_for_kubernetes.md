@@ -25,7 +25,7 @@ based on your own root certificate authority (CA). They also provide
 
 Installing [Step CA](https://github.com/smallstep/certificates) and [Step Issuer](https://github.com/smallstep/step-issuer)
 und configuring Ingresses with it, I fell into a couple of traps. So that process was not as straight forward as I
-thought and I spent a while on a working solution. So I guess it's worth sharing my experience with the public.
+ thought, and I spent a while on a working solution. So I guess it's worth sharing my experience with the public.
 
 ## Step CA
 I was using the [Helm chart to install Step CA](https://artifacthub.io/packages/helm/smallstep/step-certificates).
@@ -98,8 +98,8 @@ we also need to configure the [Step Issuer](https://github.com/smallstep/step-is
 
 ## Step Issuer
 Smallstep provides another [Helm chart to install Step Issuer](https://artifacthub.io/packages/helm/smallstep/step-issuer).
-I wanted to have a ClusterIssuer for my Kubernetes Cluster. Fortunately that Helm chart comes with a template to create
-it. But for configuring it we need the following seven values:
+I wanted to have a ClusterIssuer for my Kubernetes Cluster. Fortunately, that Helm chart comes with a template to
+create it. But for configuring it, we need the following seven values:
 
 1. CA URL
 2. CA Root certificate (base64 encoded)
@@ -110,7 +110,7 @@ it. But for configuring it we need the following seven values:
    2. Key of the password in that Secret
    3. Namespace where that Secret lives
 
-For extracting the needed values you need to have [jq](https://jqlang.github.io/jq/) installed. 
+For extracting the necessary values, you need to have [jq](https://jqlang.github.io/jq/) installed. 
 
 CA URL can be extracted from `step-certificates-config` ConfigMap (see above):
 ```shell
@@ -161,7 +161,7 @@ NAME          AGE
 step-issuer   3d3h
 ```
 So you should now have a StepClusterIssuer up and running. Please note that its name is **step-issuer** and not
-**step-cluster-issuer**. You need that name to reference it later in the Ingress annotations. For some reason I don't
+**step-cluster-issuer**. You need that name to reference it later in the Ingress annotations. For some reason, I don't
 understand the Helm chart does not provide any way to change that. Also check its status:
 ```shell
 kubectl get stepclusterissuer step-issuer -o yaml
@@ -210,3 +210,8 @@ ArgoCD offers [a nice configuration option for using custom root certificates](h
 ### SSO with Keycloak and Grafana
 Grafana is also offering [a configuration option for custom root certificates](https://grafana.com/docs/grafana/latest/setup-grafana/configure-security/configure-authentication/generic-oauth/#configuration-options).
 Please see `tls_client_ca` in that section.
+
+## Related Articles
+
+* [Single Sign On (SSO) with Grafana and Keycloak]({filename}/2025-02-07_sso_for_grafana_with_keycloak.md)
+* [Securing Prometheus and Alertmanager web UI with oauth2-proxy and Keycloak]({filename}/2025-02-28_securing_prometheus_and_alertmanager_with_oauth2-proxy.md)
