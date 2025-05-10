@@ -21,7 +21,7 @@ with low effort (like I do)? In this article, I will sketch out the solution I f
 ## UDP protocol
 Usually dedicated game servers use UDP protocol for their client communication. Handling the network traffic for UDP
 protocol is a bit challenging with Kubernetes: [Kubernetes Ingress](https://kubernetes.io/docs/concepts/services-networking/ingress/)
-only supports TCP protocol. Therefore, leveraging an ingress controller for this task is pointless.
+only supports TCP/HTTP protocols. Therefore, leveraging an ingress controller for this task is pointless.
 
 So how can we handle the incoming UDP traffic and forward it to the game server in Kubernetes? The First part of the
 solution is a [Service](https://kubernetes.io/docs/concepts/services-networking/service/) of type LoadBalancer. Here

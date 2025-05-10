@@ -68,7 +68,7 @@ the ubuntu package for simplicity:
     apt install cephadm
 
 That installs the v19.2.0 version on Ubuntu 24.04 currently. But that version is not tested with this Ubuntu version
-(see above) and this is a problem. 😀 So there is a [bug in the v19.2.0 cephadm version](https://tracker.ceph.com/issues/66389),
+(see above), and this is a problem. 😀 So there is a [bug in the v19.2.0 cephadm version](https://tracker.ceph.com/issues/66389),
 where it is not able to parse AppArmor profiles in `/sys/kernel/security/apparmor/profiles`. This will cause you a
 multitude of problems: storage devices will not become discovered, cluster communication is flawed etc.. Please check
 on [the Stackoverflow thread](https://stackoverflow.com/questions/78743144/ceph-faild-to-add-osd-node-to-a-new-ceph-cluster-error-einval-traceback-most)
@@ -107,7 +107,7 @@ My node layout looks like this:
 * hostname: ceph2, IP: 192.168.1.101
 * hostname: ceph3, IP: 192.168.1.102
 
-Cephadm needs a user which a certain set of permissions. By default the root user is used, but
+Cephadm needs a user which needs a certain set of permissions. By default, the root user is used, but
 [you can also configure a different user with narrowed down permissions](https://docs.ceph.com/en/octopus/cephadm/operations/#configuring-a-different-ssh-user).
 I am just going with the default here.
 
@@ -157,9 +157,9 @@ If everything looks fine, you can just add all storage devices and create the OD
 Everything should be up and running by now. You can check the results in the web dashboard which runs on the admin
 node: [https://ceph1:8443/](https://ceph1:8443/)
 
-![Ceph Cluster in 10'' rack]({static}/images/2024-12-26_ceph_dashboard.png)
+![Ceph Dashboard]({static}/images/2024-12-26_ceph_dashboard.png)
 
-## Self Critics
+## Self-Criticism
 Working on the project, I noticed already some things I need to improve. Having the operating system running on the
 SD cards was probably not the best idea. Especially the monitors will cause some serious wear and tear there. So I
 probably need to change that at some point in the future. So I already eyeballed other PCIe to M.2 adapters which
@@ -176,4 +176,9 @@ this.
 I will do a follow-up post on that topic for configuring the [Ceph CSI](https://github.com/ceph/ceph-csi) for the
 Kubernetes cluster as this proved not to be that straight forward.
 I already threw in some hard drives in my Proxmox machine and plan to set up another Ceph cluster there. I am interested
-to do some performance comparison between this two Ceph clusters.
+to do some performance comparison between these two Ceph clusters.
+
+## Related Articles
+
+* [Configuring and using Ceph CSI Driver for Kubernetes]({filename}/2025-03-16_ceph_csi_driver.md)
+* [Overhauling my Ceph cluster ]({filename}/2025-05-10_overhauling_my_ceph_cluster.md)

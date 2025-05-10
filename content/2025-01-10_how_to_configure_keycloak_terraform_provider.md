@@ -4,7 +4,7 @@ Summary: Since v26.0.0 Keycloak provides new configuration options for bootstrap
 Date: 2025-01-10 11:00
 Author: Max Pfeiffer
 Lang: en
-Keywords: Keycloak, OpenTofu, Terraform, Terraform Provider, bootstrapping
+Keywords: Keycloak, OpenTofu, Terraform, Terraform Provider, bootstrapping, Kubernetes
 Image: https://max-pfeiffer.github.io/blog/images/2025-01-10_keycloak_config_option.jpeg
 
 The [Keycloak](https://www.keycloak.org/) software engineers decided
@@ -26,3 +26,7 @@ to install and configure [Keycloak](https://www.keycloak.org/) in one go.
 It took me quite a while to find out about that new feature as it is mentioned hardly anywhere in docs. So I decided
 to write that article as it might help somebody else to learn about that great new [Keycloak](https://www.keycloak.org/)
 feature.
+
+## Related Articles
+
+* [How to Bootstrap a Certificate Authority in your Kubernetes Cluster]({filename}/2025-01-20_bootstrap_certificate_authority_for_kubernetes.md)

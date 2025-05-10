@@ -305,3 +305,8 @@ test-cephfs-pvc   Bound    pvc-cd5c3d81-9596-4a44-9f11-250fa30ad152   1Gi       
 ```
 When this PVC also became bound, we are happy campers. Now you can use these two new StorageClasses for applications
 you run in your Kubernetes cluster.
+
+## Related Articles
+
+* [Ceph Cluster with Raspberry Pi 5 and NVMe SSDs]({filename}/2024-12-26_ceph_cluster_with_raspberry_pi_5.md) 
+* [Overhauling my Ceph cluster ]({filename}/2025-05-10_overhauling_my_ceph_cluster.md)
