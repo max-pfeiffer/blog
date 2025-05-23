@@ -60,6 +60,7 @@ SITEMAP = {
 # Injector Plugin
 INJECTOR_ITEMS = [
     ('head', '<meta name="google-site-verification" content="F3nYemi_dYYQckoOJ33wBp5BG4frj27_I6Iiianw594" />'),
+    ('head', '<link rel="icon" href="/favicon.ico">'),
 ]
 INJECTOR_IN_PAGES = False
 INJECTOR_IN_ARTICLES = True
