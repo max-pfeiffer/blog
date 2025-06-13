@@ -12,11 +12,11 @@ cluster into a separate network and use a VLAN. After reading the
 [official documentation on that topic](https://docs.ceph.com/en/latest/rados/operations/add-or-rm-mons/#changing-a-monitor-s-ip-address),
 I learned that I am starting some bigger endeavour here. According to the documentation, existing Ceph monitors are not
 supposed to change their IP addresses. 😀 Nonetheless, I gave that a shot and screwed up my Ceph clusters
-configuration eventually. Not to a point where I could not fix it, but at some point I choose to reinstall it because
-that seemed less work.
+configuration eventually. Not to a point where I could not fix it, but at some point I choose to reinstall the Ceph
+cluster because that seemed to be less work.
 
 Also, I was not fully satisfied with the hardware setup of my devices: I was running the operating system for the
-Raspberry Pis on SD cards. When I put this together, this was a cheap and convenient option.
+Raspberry Pis on SD cards. When I put this together, this was an inexpensive and convenient option.
 This worked fine for roughly six months since
 [I initially put that together]({filename}/2024-12-26_ceph_cluster_with_raspberry_pi_5.md). But that was
 not a speedy option for storing the monitor's map on the devices. Also, I am worried about the wear and tear on the SD
@@ -29,7 +29,7 @@ NVMe HAT I currently use for the devices as it just supports a single NVME SSD. 
 * [3x Waveshare PCIe To 2-Ch M.2 Adapter Type B](https://www.waveshare.com/pcie-to-2-ch-m.2-hat-plus-b.htm)
 * [3x Transcend 110S NVMe SSD](https://www.transcend-info.com/product/internal-ssd/mte110s-112s)
 
-I removed the existing NVME HATs from all devices and installed the new one with now two NVMe SSDs.
+I removed the existing NVME HATs from all devices and installed the new one with two NVMe SSDs.
 
 ![2025-03-08_overhauling_my_ceph_cluster.jpeg]({static}/images/2025-05-10_overhauling_my_ceph_cluster.jpeg)
 
