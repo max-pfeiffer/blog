@@ -282,7 +282,6 @@ If the PVC became bound, we are good.
 
 Let's check if it also works with the CephFS StorageClass:
 ```shell
-```shell
 $ cat <<EOF > test-cephfs-pvc.yaml
 ---
 apiVersion: v1
